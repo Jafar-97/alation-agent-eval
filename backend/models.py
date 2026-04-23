@@ -1,20 +1,5 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
-from enum import Enum
-
-
-class Difficulty(str, Enum):
-    easy = "easy"
-    medium = "medium"
-    hard = "hard"
-
-
-class Category(str, Enum):
-    financial = "financial"
-    operational = "operational"
-    governance = "governance"
-    ml_features = "ml_features"
-    compliance = "compliance"
 
 
 class Benchmark(BaseModel):
