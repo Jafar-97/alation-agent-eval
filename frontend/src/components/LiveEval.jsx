@@ -90,7 +90,7 @@ export default function LiveEval() {
     setResult(null);
     setAnimate(false);
     try {
-      const res = await axios.post('/api/eval/run', { benchmark_id: selectedId });
+      const res = await axios.post('https://alation-agent-eval-1.onrender.com/api/eval/run', { benchmark_id: selectedId });
       setResult(res.data);
       setTimeout(() => setAnimate(true), 50);
     } catch (err) {

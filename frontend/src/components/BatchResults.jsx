@@ -38,7 +38,7 @@ export default function BatchResults() {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get('/api/eval/run-batch');
+      const res = await axios.get('https://alation-agent-eval-1.onrender.com/api/eval/run-batch');
       setResult(res.data);
       setRan(true);
     } catch {
