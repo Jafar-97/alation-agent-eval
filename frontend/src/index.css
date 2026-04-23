@@ -1,0 +1,36 @@
+:root {
+  --orange: #FF6B00;
+  --orange-light: #FF8A30;
+  --orange-glow: rgba(255, 107, 0, 0.18);
+  --orange-dim: rgba(255, 107, 0, 0.08);
+  --slate: #1A1D2E;
+  --slate-mid: #1E2133;
+  --slate-card: #242740;
+  --slate-border: rgba(255, 255, 255, 0.07);
+  --white: #ffffff;
+  --text-main: #E8EAF2;
+  --text-muted: #8A8FA8;
+  --text-dim: #555A72;
+  --green: #22C55E;
+  --red: #EF4444;
+  --yellow: #F59E0B;
+  --blue: #3B82F6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--slate);
+  color: var(--text-main);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--slate); }
+::-webkit-scrollbar-thumb { background: var(--slate-card); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--orange); }
